@@ -52,4 +52,4 @@ Tutorial link is https://pfertyk.me/2017/06/getting-mars-photos-from-nasa-using-
     web.run_app(app, host='127.0.0.1', port=8080)
 
 
-![mars](https://github.com/imvickykumar999/Mars-photos-from-NASA/blob/main/127.0.0.jpg?raw=true)
+![mars](https://github.com/imvickykumar999/Mars-photos-from-NASA/blob/main/static/fetched/1142.jpg?raw=true)
