@@ -2,7 +2,7 @@ import random, io
 from aiohttp import web, ClientSession
 from PIL import Image
 
-NASA_API_KEY = '2ZQHnGRWr9hyC8NT5gUGRJRStc4rrs9BOmTB7LeB'
+NASA_API_KEY = 'DEMO_KEY'
 ROVER_URL = 'https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos'
 
 
@@ -39,7 +39,7 @@ async def get_mars_photo_bytes():
 
 async def get_mars_photo(request):
     image = await get_mars_photo_bytes()
-    # Image.open(io.BytesIO(image)).save('toupload/image.jpeg')
+    print(image)
     return web.Response(body=image, content_type='image/jpeg')
 
 
